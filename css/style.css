@@ -1,0 +1,222 @@
+:root {
+    --ballin-black: #1a1a1a;
+    --ballin-dark: #2d2d2d;
+    --ballin-red: #ff4d4d;
+    --ballin-orange: #ff6b35;
+    --ballin-warning: #ffc107;
+    --ballin-light: #f8f9fa;
+}
+
+/* Background Colors */
+.bg-dark-custom {
+    background-color: var(--ballin-black) !important;
+}
+
+.bg-orange {
+    background-color: var(--ballin-orange) !important;
+}
+
+.bg-red {
+    background-color: var(--ballin-red) !important;
+}
+
+/* Text Colors */
+.text-orange {
+    color: var(--ballin-orange) !important;
+}
+
+/* Button Colors */
+.btn-orange {
+    background-color: var(--ballin-orange);
+    border-color: var(--ballin-orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #e55a2b;
+    border-color: #e55a2b;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1544919982-b61976a0d7ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.2);
+}
+
+/* Table Styling */
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 107, 53, 0.1);
+}
+
+/* Progress Bar */
+.progress {
+    border-radius: 10px;
+}
+
+/* Badge Custom */
+.badge {
+    font-weight: 500;
+    padding: 0.5em 1em;
+}
+
+/* Modal Header */
+.modal-header {
+    border-bottom: none;
+}
+
+/* Pagination */
+.page-link {
+    color: var(--ballin-orange);
+}
+
+.page-item.active .page-link {
+    background-color: var(--ballin-orange);
+    border-color: var(--ballin-orange);
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Alert Styling */
+.alert {
+    border: none;
+    border-left: 4px solid;
+}
+
+.alert-warning {
+    border-left-color: var(--ballin-warning);
+}
+
+.alert-danger {
+    border-left-color: var(--ballin-red);
+}
+
+/* Toast Custom */
+.toast {
+    background-color: white;
+    border-left: 4px solid var(--ballin-orange);
+}
+
+/* Placeholder Animation */
+.placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Spinner Container */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Popover Custom */
+.popover {
+    border: 2px solid var(--ballin-orange);
+}
+
+.popover-header {
+    background-color: var(--ballin-orange);
+    color: white;
+    border-bottom: none;
+}
+
+/* Tooltip Custom */
+.tooltip-inner {
+    background-color: var(--ballin-orange);
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--ballin-orange);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+.container{
+    background-image: url('ball in.png') ;
+}
+/* Additional styles for achievements page */
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+.card:hover .card-header {
+    background-color: var(--ballin-dark) !important;
+    transition: background-color 0.3s;
+}
+
+.progress-bar {
+    transition: width 2s ease-in-out;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 193, 7, 0.2);
+    transform: translateX(5px);
+    transition: all 0.3s;
+}
+
+.btn-outline-orange {
+    color: var(--ballin-orange);
+    border-color: var(--ballin-orange);
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--ballin-orange);
+    color: white;
+}
+
+/* Achievement badge animations */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 107, 53, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 107, 53, 0.5); }
+}
+
+.badge.bg-success, .badge.bg-warning {
+    animation: glow 2s infinite;
+}
+
+/* Modal styling */
+.modal-content {
+    border: 2px solid var(--ballin-orange);
+}
+
+/* Toast positioning */
+.toast {
+    z-index: 9999;
+}

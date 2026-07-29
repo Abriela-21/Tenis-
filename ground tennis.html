@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tennis Field</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <div class="container"> <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#logoModal"> <img src="loogo.png" alt="Sports Complex Logo" height="45"> </a> <div class="modal fade" id="logoModal"> <div class="modal-dialog modal-lg modal-dialog-centered"> <div class="modal-content p-3"> <img src="logo.jpg" class="modal-img" alt="Full Logo"> </div> </div> </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navMenu"> <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <li class="nav-item"><a class="nav-link active" href="index.html">Tennis</a></li> <li class="nav-item"><a class="nav-link" href="badminton.html">Badminton</a></li> <li class="nav-item"><a class="nav-link" href="football.html">Football</a></li> <li class="nav-item"><a class="nav-link" href="basketball.html">Basketball</a></li> <li class="nav-item"><a class="nav-link" href="volleyball.html">Volleyball</a></li> <li class="nav-item"><a class="nav-link" href="handball.html">Handball</a></li> <li class="nav-item"><a class="nav-link" href="gym.html">Gym</a></li> <li class="nav-item"><a class="nav-link" href="ground tennis.html">ground tennis</a></li> <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li> <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> About </a> <ul class="dropdown-menu"> <li><a class="dropdown-item" href="vision.html">Vision</a></li> <li><a class="dropdown-item" href="mission.html">Mission</a></li> <li><a class="dropdown-item" href="goals.html">Goals</a></li> </ul> </li> <li class="nav-item"> <a class="nav-link badge bg-success text-white" href="contact.html">Contact</a> </li> </ul> </div> </div> </nav>
+
+<!-- HEADER -->
+<div class="container-fluid bg-success text-light py-4 text-center">
+  <h1 class="fw-bold mb-1">🎾 Tennis Field</h1>
+  <p class="mb-0">Professional training space for all ages and skill levels</p>
+</div>
+
+<!-- MAIN CARDS SECTION -->
+<div class="container my-4">
+  <div class="row g-3">
+
+    <!-- CARD 1: Coaching Stages (Collapse) -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Stages of Coaching</h5>
+          <p>Click below to see the coaching stages:</p>
+          <div class="accordion" id="stagesAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="beginnerHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beginnerCollapse">
+                  Beginner
+                </button>
+              </h2>
+              <div id="beginnerCollapse" class="accordion-collapse collapse" data-bs-parent="#stagesAccordion">
+                <div class="accordion-body">
+                  Focus on basic rules, racquet handling, and footwork.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="intermediateHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#intermediateCollapse">
+                  Intermediate
+                </button>
+              </h2>
+              <div id="intermediateCollapse" class="accordion-collapse collapse" data-bs-parent="#stagesAccordion">
+                <div class="accordion-body">
+                  Strategy, agility drills, and competitive play.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="advancedHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#advancedCollapse">
+                  Advanced
+                </button>
+              </h2>
+              <div id="advancedCollapse" class="accordion-collapse collapse" data-bs-parent="#stagesAccordion">
+                <div class="accordion-body">
+                  High-level competition, tournament preparation, and fitness optimization.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: Coaches -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <div class="card-body">
+          <h5 class="card-title">Our Coaches</h5>
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item">Coach Alemu – Beginner</li>
+            <li class="list-group-item">Coach Sara – Intermediate</li>
+            <li class="list-group-item">Coach Daniel – Advanced</li>
+          </ul>
+          <button type="button" class="btn btn-success mt-3" data-bs-toggle="popover" title="Rewards" data-bs-content="🏆 Best player each month gets a free training session!">
+            Show Rewards
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Tennis Images (Carousel) -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div id="tennisCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active">
+              <img src="ground tennis.png" class="d-block w-100 h-100" style="object-fit:cover;" alt="Tennis Court">
+            </div>
+            <div class="carousel-item">
+              <img src="grou.jpg" class="d-block w-100 h-100" style="object-fit:cover;" alt="Training Session">
+            </div>
+            <div class="carousel-item">
+              <img src="gt.jpg" class="d-block w-100 h-100" style="object-fit:cover;" alt="Kids Playing">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#tennisCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#tennisCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PLAYER DISTRIBUTION & DAILY REGISTRATION -->
+<div class="container mb-4">
+  <div class="row g-3">
+
+    <!-- Player Distribution -->
+    <div class="col-md-6">
+      <h5 class="fw-bold mb-2">👥 Player Distribution</h5>
+      <p class="mb-1">Boys (60%)</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:60%">60%</div>
+      </div>
+      <p class="mb-1">Girls (40%)</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark" style="width:40%">40%</div>
+      </div>
+    </div>
+
+    <!-- Spinners -->
+    <div class="col-md-6 text-center">
+      <h5 class="fw-bold mb-2">📅 Today's Registration</h5>
+      <div class="d-flex justify-content-center gap-2">
+        <div class="spinner-border text-primary" role="status"></div>
+        <div class="spinner-border text-success" role="status"></div>
+        <div class="spinner-border text-warning" role="status"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER WITH RATING -->
+<footer class="bg-dark text-light py-4 mt-4">
+  <div class="container text-center">
+    <h5 class="fw-bold mb-2">Addis Ababa Tennis & Badminton Center</h5>
+    <p class="small mb-3">Rate our website:</p>
+    <div>
+      <button class="btn btn-sm btn-warning">★</button>
+      <button class="btn btn-sm btn-warning">★</button>
+      <button class="btn btn-sm btn-warning">★</button>
+      <button class="btn btn-sm btn-warning">★</button>
+      <button class="btn btn-sm btn-warning">★</button>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Enable popovers
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
+</script>
+</body>
+</html>

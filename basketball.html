@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basketball Field</title>
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <div class="container"> <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#logoModal"> <img src="loogo.png" alt="Sports Complex Logo" height="45"> </a> <div class="modal fade" id="logoModal"> <div class="modal-dialog modal-lg modal-dialog-centered"> <div class="modal-content p-3"> <img src="logo.jpg" class="modal-img" alt="Full Logo"> </div> </div> </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navMenu"> <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <li class="nav-item"><a class="nav-link active" href="index.html">Tennis</a></li> <li class="nav-item"><a class="nav-link" href="badminton.html">Badminton</a></li> <li class="nav-item"><a class="nav-link" href="football.html">Football</a></li> <li class="nav-item"><a class="nav-link" href="basketball.html">Basketball</a></li> <li class="nav-item"><a class="nav-link" href="volleyball.html">Volleyball</a></li> <li class="nav-item"><a class="nav-link" href="handball.html">Handball</a></li> <li class="nav-item"><a class="nav-link" href="gym.html">Gym</a></li> <li class="nav-item"><a class="nav-link" href="ground tennis.html">ground tennis</a></li> <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li> <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> About </a> <ul class="dropdown-menu"> <li><a class="dropdown-item" href="vision.html">Vision</a></li> <li><a class="dropdown-item" href="mission.html">Mission</a></li> <li><a class="dropdown-item" href="goals.html">Goals</a></li> </ul> </li> <li class="nav-item"> <a class="nav-link badge bg-success text-white" href="contact.html">Contact</a> </li> </ul> </div> </div> </nav>
+
+<!-- HEADER -->
+<div class="container-fluid bg-secondary text-light py-4 text-center">
+  <h1 class="fw-bold mb-1"><i class="bi bi-basketball"></i> Basketball Field</h1>
+  <p class="mb-0">Dynamic basketball training and competitive matches for all skill levels</p>
+</div>
+
+<!-- MAIN CARDS SECTION -->
+<div class="container my-4">
+  <div class="row g-3">
+
+    <!-- CARD 1: Field Info with Badge -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🏀 Court Status <span class="badge bg-success">Open</span></h5>
+          <p>Indoor basketball court with professional hoops and markings.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-clock"></i> Hours: 8 AM – 10 PM</li>
+            <li class="list-group-item"><i class="bi bi-calendar-event"></i> Days: Mon – Sat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: Coaches Modal + Popover for Top Players -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title">👨‍🏫 Coaches</h5>
+          <p>Click to view all basketball coaches:</p>
+          <button type="button" class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#coachesModal">
+            View Coaches
+          </button>
+          <br>
+          <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="🏆 Top Players" data-bs-content="Player A: Best Shooter, Player B: Best Defender, Player C: MVP">
+            Top Players Awards
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Training Sessions with Accordion + Carousel -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🏀 Training Sessions</h5>
+          <div class="accordion" id="trainingAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beginnerSession">
+                  Beginner
+                </button>
+              </h2>
+              <div id="beginnerSession" class="accordion-collapse collapse" data-bs-parent="#trainingAccordion">
+                <div class="accordion-body">
+                  Basic dribbling, passing, and shooting.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#intermediateSession">
+                  Intermediate
+                </button>
+              </h2>
+              <div id="intermediateSession" class="accordion-collapse collapse" data-bs-parent="#trainingAccordion">
+                <div class="accordion-body">
+                  Teamplay, defense strategies, and scrimmages.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#advancedSession">
+                  Advanced
+                </button>
+              </h2>
+              <div id="advancedSession" class="accordion-collapse collapse" data-bs-parent="#trainingAccordion">
+                <div class="accordion-body">
+                  Competitive matches, tournaments, and fitness drills.
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PLAYER DISTRIBUTION & DAILY REGISTRATION -->
+  <div class="row g-3 mt-4">
+
+    <!-- Player Distribution -->
+    <div class="col-md-6">
+      <h5 class="fw-bold mb-2"><i class="bi bi-people-fill"></i> Player Distribution</h5>
+      <p class="mb-1">Boys (75%)</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:75%">75%</div>
+      </div>
+      <p class="mb-1">Girls (25%)</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark" style="width:25%">25%</div>
+      </div>
+    </div>
+
+    <!-- Daily Registration Spinners -->
+    <div class="col-md-6 text-center">
+      <h5 class="fw-bold mb-2"><i class="bi bi-card-list"></i> Today's Registration</h5>
+      <div class="d-flex justify-content-center gap-2">
+        <div class="spinner-border text-secondary" role="status"></div>
+        <div class="spinner-border text-success" role="status"></div>
+        <div class="spinner-border text-warning" role="status"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- COACHES MODAL -->
+<div class="modal fade" id="coachesModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary text-light">
+        <h5 class="modal-title">👨‍🏫 Coaches</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">Coach John – Beginner</li>
+          <li class="list-group-item">Coach Peter – Intermediate</li>
+          <li class="list-group-item">Coach Emma – Advanced</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4 text-center">
+  <h5 class="fw-bold mb-2">Addis Ababa Basketball Center</h5>
+  <p class="small mb-0">Rate our website:</p>
+  <div>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Enable popovers
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
+</script>
+</body>
+</html>

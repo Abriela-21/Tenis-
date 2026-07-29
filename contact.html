@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Sports Complex</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+    body {
+        background: linear-gradient(to right, #f1f8e9, #e8f5e9);
+    }
+    .contact-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+    .contact-btn {
+        background-color: #198754;
+        color: #fff;
+        font-weight: 500;
+    }
+    .contact-btn:hover {
+        background-color: #157347;
+    }
+    .badge-important {
+        background-color: #ffc107;
+        font-size: 0.85rem;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2c3e50;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Sports Complex</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="vision.html">Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="mission.html">Mission</a></li>
+        <li class="nav-item"><a class="nav-link" href="goals.html">Goals</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<div class="container py-5">
+    <h1 class="mb-4 text-center"><i class="bi bi-envelope-fill"></i> Contact Us</h1>
+
+    <!-- Alert -->
+    <div id="successAlert" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+        <strong>Thank you!</strong> Your message has been sent successfully.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- Contact Form Card -->
+    <div class="contact-card">
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name <span class="badge badge-important">Required</span></label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email <span class="badge badge-important">Required</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label">Your Age</label>
+                <select class="form-select" id="age">
+                    <option selected disabled>Select your age</option>
+                    <option>Under 10</option>
+                    <option>10-15</option>
+                    <option>16-20</option>
+                    <option>21-30</option>
+                    <option>31-50</option>
+                    <option>51+</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="field" class="form-label">Preferred Sports Field <span class="badge bg-info text-dark">Optional</span></label>
+                <select class="form-select" id="field">
+                    <option selected disabled>Select field</option>
+                    <option>Tennis</option>
+                    <option>Badminton</option>
+                    <option>Football</option>
+                    <option>Basketball</option>
+                    <option>Volleyball</option>
+                    <option>Handball</option>
+                    <option>Gym</option>
+                    <option>Playground</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Free Time / Availability</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Morning" id="time1">
+                    <label class="form-check-label" for="time1">Morning</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Afternoon" id="time2">
+                    <label class="form-check-label" for="time2">Afternoon</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Evening" id="time3">
+                    <label class="form-check-label" for="time3">Evening</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Training Status <span class="badge bg-success">Choose one</span></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="beginner" value="Beginner" required>
+                    <label class="form-check-label" for="beginner">Beginner</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="intermediate" value="Intermediate">
+                    <label class="form-check-label" for="intermediate">Intermediate</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="advanced" value="Advanced">
+                    <label class="form-check-label" for="advanced">Advanced</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message <span class="badge bg-warning text-dark">Optional</span></label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+            </div>
+
+            <button type="submit" class="btn contact-btn w-100">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Address & Social Media Card -->
+    <div class="contact-card contact-info">
+        <h5>Our Address:</h5>
+        <p>Around Jemo Michael, Addis Ababa</p>
+
+        <h5>Follow Us:</h5>
+        <p>
+            <a href="https://facebook.com/yourpage" target="_blank"><i class="bi bi-facebook me-1"></i>Facebook</a> | 
+            <a href="https://instagram.com/yourpage" target="_blank"><i class="bi bi-instagram me-1"></i>Instagram</a> | 
+            <a href="https://twitter.com/yourpage" target="_blank"><i class="bi bi-twitter me-1"></i>Twitter</a>
+        </p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4 text-center">
+    <div class="container">
+        <h5 class="fw-bold mb-2">Addis Ababa City Administration Sports Complex</h5>
+        <p class="small mb-0">© 2026 All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        // Show success alert
+        document.getElementById('successAlert').classList.remove('d-none');
+        // Reset form
+        this.reset();
+    });
+
+    // Enable Bootstrap tooltips & popovers
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el));
+</script>
+
+</body>
+</html>

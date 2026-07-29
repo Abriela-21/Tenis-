@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Center</title>
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <div class="container"> <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#logoModal"> <img src="loogo.png" alt="Sports Complex Logo" height="45"> </a> <div class="modal fade" id="logoModal"> <div class="modal-dialog modal-lg modal-dialog-centered"> <div class="modal-content p-3"> <img src="logo.jpg" class="modal-img" alt="Full Logo"> </div> </div> </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navMenu"> <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <li class="nav-item"><a class="nav-link active" href="index.html">Tennis</a></li> <li class="nav-item"><a class="nav-link" href="badminton.html">Badminton</a></li> <li class="nav-item"><a class="nav-link" href="football.html">Football</a></li> <li class="nav-item"><a class="nav-link" href="basketball.html">Basketball</a></li> <li class="nav-item"><a class="nav-link" href="volleyball.html">Volleyball</a></li> <li class="nav-item"><a class="nav-link" href="handball.html">Handball</a></li> <li class="nav-item"><a class="nav-link" href="gym.html">Gym</a></li> <li class="nav-item"><a class="nav-link" href="ground tennis.html">ground tennis</a></li> <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li> <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> About </a> <ul class="dropdown-menu"> <li><a class="dropdown-item" href="vision.html">Vision</a></li> <li><a class="dropdown-item" href="mission.html">Mission</a></li> <li><a class="dropdown-item" href="goals.html">Goals</a></li> </ul> </li> <li class="nav-item"> <a class="nav-link badge bg-success text-white" href="contact.html">Contact</a> </li> </ul> </div> </div> </nav>
+
+<!-- HEADER -->
+<div class="container-fluid text-center py-4" style="background-color:#34495e; color:#f8f9fa;">
+  <h1 class="fw-bold mb-1"><i class="bi bi-barbell"></i> Gym Center</h1>
+  <p class="mb-0">State-of-the-art gym with full shower facilities and personal trainers</p>
+</div>
+
+<!-- MAIN CARDS -->
+<div class="container my-4">
+  <div class="row g-3">
+
+    <!-- CARD 1: Equipment -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🏋️ Gym Equipment</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Dumbbells <span class="badge bg-success float-end">Available</span></li>
+            <li class="list-group-item">Bench Press <span class="badge bg-primary float-end">Strong</span></li>
+            <li class="list-group-item">Yoga Mats <span class="badge bg-warning text-dark float-end">Comfort</span></li>
+            <li class="list-group-item">Exercise Balls <span class="badge bg-info float-end">Fun</span></li>
+            <li class="list-group-item">Showers <span class="badge bg-secondary float-end">Clean</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: Personal Trainers Modal -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title">👨‍🏫 Personal Trainers</h5>
+          <p>Meet our experienced trainers:</p>
+          <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#trainersModal">
+            View Trainers
+          </button>
+          <br>
+          <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="🏆 Trainer Highlights" data-bs-content="Coach Alemu: Strength Specialist, Coach Sara: Cardio Expert, Coach Daniel: Weight Training Guru">
+            Top Trainers
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Gym Carousel -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">📸 Gym in Action</h5>
+          <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="gymm.jpg" class="d-block w-100" style="height:200px; object-fit:cover;" alt="Gym Equipment">
+              </div>
+              <div class="carousel-item">
+                <img src="gymm2.jpg" class="d-block w-100" style="height:200px; object-fit:cover;" alt="Training Session">
+              </div>
+              <div class="carousel-item">
+                <img src="gymm3.jpg" class="d-block w-100" style="height:200px; object-fit:cover;" alt="Personal Trainer">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TRAINING LEVEL DISTRIBUTION & SPINNERS -->
+  <div class="row g-3 mt-4">
+
+    <!-- Training Level Distribution -->
+    <div class="col-md-6">
+      <h5 class="fw-bold mb-2"><i class="bi bi-people-fill"></i> Training Level Distribution</h5>
+      <p class="mb-1">Beginner (40%)</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:40%">40%</div>
+      </div>
+      <p class="mb-1">Intermediate (35%)</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark" style="width:35%">35%</div>
+      </div>
+      <p class="mb-1">Advanced (25%)</p>
+      <div class="progress">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:25%">25%</div>
+      </div>
+    </div>
+
+    <!-- Daily Sign-ups Spinners -->
+    <div class="col-md-6 text-center">
+      <h5 class="fw-bold mb-2"><i class="bi bi-card-list"></i> Today's Sign-ups</h5>
+      <div class="d-flex justify-content-center gap-2">
+        <div class="spinner-border text-success" role="status"></div>
+        <div class="spinner-border text-warning" role="status"></div>
+        <div class="spinner-border text-danger" role="status"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- GYM SCHEDULE ACCORDION -->
+  <div class="container mt-4">
+    <h5 class="fw-bold mb-2"><i class="bi bi-calendar-event"></i> Gym Schedule</h5>
+    <div class="accordion" id="gymSchedule">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#morning">
+            Morning Session
+          </button>
+        </h2>
+        <div id="morning" class="accordion-collapse collapse" data-bs-parent="#gymSchedule">
+          <div class="accordion-body">6:00 AM – 10:00 AM: Cardio & Strength Training</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afternoon">
+            Afternoon Session
+          </button>
+        </h2>
+        <div id="afternoon" class="accordion-collapse collapse" data-bs-parent="#gymSchedule">
+          <div class="accordion-body">12:00 PM – 4:00 PM: Weight Training & Personal Training</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#evening">
+            Evening Session
+          </button>
+        </h2>
+        <div id="evening" class="accordion-collapse collapse" data-bs-parent="#gymSchedule">
+          <div class="accordion-body">5:00 PM – 9:00 PM: Mixed Training & Open Gym</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- TRAINERS MODAL -->
+<div class="modal fade" id="trainersModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title">👨‍🏫 Personal Trainers</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">Coach Alemu – Strength Training</li>
+          <li class="list-group-item">Coach Sara – Cardio & HIIT</li>
+          <li class="list-group-item">Coach Daniel – Weight Training & Technique</li>
+          <li class="list-group-item">Coach Hana – Personal Fitness Plans</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4 text-center">
+  <h5 class="fw-bold mb-2">Addis Ababa Gym Center</h5>
+  <p class="small mb-0">Rate our website:</p>
+  <div>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Enable popovers
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
+</script>
+</body>
+</html>

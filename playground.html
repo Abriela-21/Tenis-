@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Children's Playground</title>
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <div class="container"> <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#logoModal"> <img src="loogo.png" alt="Sports Complex Logo" height="45"> </a> <div class="modal fade" id="logoModal"> <div class="modal-dialog modal-lg modal-dialog-centered"> <div class="modal-content p-3"> <img src="logo.jpg" class="modal-img" alt="Full Logo"> </div> </div> </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navMenu"> <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <li class="nav-item"><a class="nav-link active" href="index.html">Tennis</a></li> <li class="nav-item"><a class="nav-link" href="badminton.html">Badminton</a></li> <li class="nav-item"><a class="nav-link" href="football.html">Football</a></li> <li class="nav-item"><a class="nav-link" href="basketball.html">Basketball</a></li> <li class="nav-item"><a class="nav-link" href="volleyball.html">Volleyball</a></li> <li class="nav-item"><a class="nav-link" href="handball.html">Handball</a></li> <li class="nav-item"><a class="nav-link" href="gym.html">Gym</a></li> <li class="nav-item"><a class="nav-link" href="ground tennis.html">ground tennis</a></li> <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li> <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> About </a> <ul class="dropdown-menu"> <li><a class="dropdown-item" href="vision.html">Vision</a></li> <li><a class="dropdown-item" href="mission.html">Mission</a></li> <li><a class="dropdown-item" href="goals.html">Goals</a></li> </ul> </li> <li class="nav-item"> <a class="nav-link badge bg-success text-white" href="contact.html">Contact</a> </li> </ul> </div> </div> </nav>
+
+<!-- HEADER -->
+<div class="container-fluid text-center py-4" style="background-color:#ffd700;">
+  <h1 class="fw-bold mb-1">🎠 Children's Playground</h1>
+  <p class="mb-0">Safe, fun, and colorful playground for kids of all ages</p>
+</div>
+
+<!-- MAIN CARDS -->
+<div class="container my-4">
+  <div class="row g-3">
+
+    <!-- CARD 1: Playground Materials -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🏗️ Playground Materials</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ሽረተቲ <span class="badge bg-success float-end">Safe</span></li>
+            <li class="list-group-item">ስዊንግ <span class="badge bg-info float-end">Fun</span></li>
+            <li class="list-group-item">Slide <span class="badge bg-warning text-dark float-end">Exciting</span></li>
+            <li class="list-group-item">Sandbox <span class="badge bg-primary float-end">Creative</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: Activities Modal + Popover -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title">🎲 Activities</h5>
+          <p>Check out the fun activities:</p>
+          <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#activitiesModal">
+            View Activities
+          </button>
+          <br>
+          <button type="button" class="btn btn-info" data-bs-toggle="popover" title="🌟 Highlights" data-bs-content="Best Sandbox Creations, Swing Challenges, Slide Races">
+            Today's Highlights
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Kids Playing Carousel -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">📸 Kids in Action</h5>
+          <div id="playgroundCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="play.jpg" class="d-block w-100" style="height:200px; object-fit:cover;" alt="Kids Swinging">
+              </div>
+              <div class="carousel-item">
+                <img src="kids.jpg" class="d-block w-100" style="height:200px; object-fit:cover;" alt="Sandbox Fun">
+              </div>
+              <div class="carousel-item">
+                <img src="play.jpg" class="d-block w-100" style="height:200px; object-fit:cover;" alt="Slide Race">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#playgroundCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#playgroundCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- AGE DISTRIBUTION & REGISTRATION SPINNERS -->
+  <div class="row g-3 mt-4">
+
+    <!-- Age Distribution -->
+    <div class="col-md-6">
+      <h5 class="fw-bold mb-2"><i class="bi bi-people-fill"></i> Age Distribution</h5>
+      <p class="mb-1">3–5 years (30%)</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+      </div>
+      <p class="mb-1">6–10 years (50%)</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark" style="width:50%">50%</div>
+      </div>
+      <p class="mb-1">11–17 years (20%)</p>
+      <div class="progress">
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:20%">20%</div>
+      </div>
+    </div>
+
+    <!-- Daily Registration Spinners -->
+    <div class="col-md-6 text-center">
+      <h5 class="fw-bold mb-2"><i class="bi bi-card-list"></i> Today's Registration</h5>
+      <div class="d-flex justify-content-center gap-2">
+        <div class="spinner-border text-success" role="status"></div>
+        <div class="spinner-border text-warning" role="status"></div>
+        <div class="spinner-border text-danger" role="status"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ACTIVITIES MODAL -->
+<div class="modal fade" id="activitiesModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title">🎲 Playground Activities</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">Swinging Fun</li>
+          <li class="list-group-item">Slide Races</li>
+          <li class="list-group-item">Sandbox Creative Play</li>
+          <li class="list-group-item">Group Games & Team Activities</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4 text-center">
+  <h5 class="fw-bold mb-2">Addis Ababa Playground Center</h5>
+  <p class="small mb-0">Rate our website:</p>
+  <div>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+    <button class="btn btn-sm btn-warning">★</button>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Enable popovers
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el))
+</script>
+</body>
+</html>
